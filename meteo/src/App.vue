@@ -1,12 +1,13 @@
 <template>
   <div id="app">
     <Recherche :appid="appid" @result="setMeteo" />
-    {{ meteo }}
+    <Meteo v-if="meteo" :meteo="meteo" />
   </div>
 </template>
 
 <script>
 import Recherche from './components/Recherche.vue'
+import Meteo from './components/Meteo.vue'
 
 export default {
   name: 'app',
@@ -17,7 +18,8 @@ export default {
     }
   },
   components: {
-    Recherche
+    Recherche,
+    Meteo
   },
   methods: {
     setMeteo: function(value) {
