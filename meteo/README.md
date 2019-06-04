@@ -1,7 +1,5 @@
 # Exercice Meteo
 
-Suite à l'étape 2 on peu à présent s'attarder sur l'aspect graphique puis compiler notre application pour la production (dans vue ui, tâche build).
+## Fin d'exercice
 
-```
-$ git checkout step-4
-```
+Cette branche correspond à la correction de l'exercice météo. Elle contient également la version compilé de notre application météo dans le dossier `dist/`
